@@ -3,3 +3,21 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+.front_hero {
+  background:
+  linear-gradient( to right,
+    rgba(0,0,0,0.4),rgba(0,0,0,0.4) 100%),
+    url(../../images/home-hero.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_logo {
+  width: 280px;
+  height: 280px;
+  background: url(../../images/inhabitent-logo-full.svg);
+  background-size: cover;
+}

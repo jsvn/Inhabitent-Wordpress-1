@@ -10,9 +10,18 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<p>Hello front page</p>
+			<div class="front_hero">
+				<div class="hero_logo">
+				
+				</div>
+
+			</div>
+
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+
 
 <?php get_footer(); ?>
