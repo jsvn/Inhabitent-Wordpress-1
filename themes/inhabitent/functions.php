@@ -105,14 +105,4 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 //
-// require get_template_directory() . '/inc/login.php';
-
-// custom login for theme
-function inhabitent_custom_login_logo() {
-     echo '<style type="text/css">
-         h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-text-dark.svg) !important;
-         height: 120px !important; width: 410px !important; margin-left: -40px;
-			 	 background-size: cover;}
-     </style>';
-}
-add_action('login_head', 'inhabitent_custom_login_logo');
+require get_template_directory() . '/inc/login.php';
