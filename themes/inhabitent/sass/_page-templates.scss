@@ -3,6 +3,12 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.parent-home .content-area{
+  border: 2px solid blue;
+  width: 100%;
+}
+
 .front_hero {
   background:
   linear-gradient( to right,
@@ -13,6 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .hero_logo {
@@ -20,4 +27,86 @@
   height: 280px;
   background: url(../../images/inhabitent-logo-full.svg);
   background-size: cover;
+}
+
+.shop_stuff {
+  width: 100%;
+  text-align: center;
+}
+
+.taxonomy_box_wrapper {
+  width: 100%;
+  border: 1px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.home_taxonomy_box {
+  width: 22%;
+  border: 1px dashed red;
+}
+
+.home_taxonomy_img {
+  width: 100px;
+  height: 100px;
+}
+// Journal Page
+
+.blog {
+
+      .site-content {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+     .content-area {
+      width: 70%;
+      border: 2px solid green;
+    }
+
+    .entry-header img {
+      width: 100%;
+    }
+
+    .post_top_wrap {
+      position: relative;
+      border: 1px solid red;
+      padding: 5%;
+    }
+
+    .entry-title {
+      position: absolute;
+      top: 60px;
+      background-color: #248A83;
+      color: #fff;
+      width: 65%;
+      padding: 2%;
+    }
+
+    .entry-title a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+
+    }
+
+    .widget-area {
+      width: 28%;
+    }
+
+}
+
+// About Page
+
+.about_hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.8rem;
 }

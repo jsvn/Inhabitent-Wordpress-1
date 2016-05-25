@@ -27,3 +27,44 @@ function inhabitent_remove_submenus() {
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action( 'admin_init', 'inhabitent_remove_submenus', 102 );
+
+
+//setting inline css.
+function about_hero_style_method() {
+
+				// if ( !is_page_template( 'about.php' ) ) {
+				// 	return ;
+				// }
+					$hero_img = CFS()->get( 'hero_image' ); //E.g. #FF0000
+					$custom_css = "
+									.about_hero{
+													background:
+													linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+													url(".$hero_img.");
+													background-size: cover;
+									}";
+					wp_add_inline_style( 'inhabitent-style', $custom_css );
+
+
+}
+add_action( 'wp_enqueue_scripts', 'about_hero_style_method' );
+
+
+function inhabitent_filter_product_query( $query ){
+
+		if ( is_post_type_archive() && !is_admin() && $query->is_main_query() ){
+			$query->set('orderby', 'title');
+			$query->set('order', 'ASC');
+			$query->set('posts_per_page', 16);
+		}
+
+};
+
+
+add_action('pre_get_posts', 'inhabitent_filter_product_query');
+
+
+
+
+
+?>
