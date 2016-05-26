@@ -56,3 +56,50 @@
     font-weight: normal;
     font-style: normal;
 }
+
+// Page Fonts
+
+.home_titles {
+  font-family: $font_nov;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 2.8rem;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+
+a.home_taxonomy_link{
+  font-family: $font_nov;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+a.home_taxonomy_link:visited {
+color:#fff;
+}
+
+p.para_tax_box {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+}
+
+h3.journal_home_boxes {
+  color: #248A83;
+  font-family: $font_nov;
+  text-transform: uppercase;
+  margin-left: 15px;
+  font-size: 1.8rem;
+}
+
+span.date_comments {
+  display: block;
+  font-family: $font_meri;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  margin-left: 15px;
+}

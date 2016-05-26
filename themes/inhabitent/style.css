@@ -258,6 +258,44 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+.home_titles {
+  font-family: "novecento";
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 2.8rem;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%; }
+
+a.home_taxonomy_link {
+  font-family: "novecento";
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem; }
+
+a.home_taxonomy_link:visited {
+  color: #fff; }
+
+p.para_tax_box {
+  font-size: 1.1rem;
+  line-height: 1.9rem; }
+
+h3.journal_home_boxes {
+  color: #248A83;
+  font-family: "novecento";
+  text-transform: uppercase;
+  margin-left: 15px;
+  font-size: 1.8rem; }
+
+span.date_comments {
+  display: block;
+  font-family: "merriweather";
+  font-size: 0.8rem;
+  margin-top: 10px;
+  margin-left: 15px; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -763,10 +801,6 @@ object {
   background: url(../../images/inhabitent-logo-full.svg);
   background-size: cover; }
 
-.shop_stuff {
-  width: 100%;
-  text-align: center; }
-
 .taxonomy_box_wrapper {
   width: 100%;
   display: -ms-flexbox;
@@ -778,9 +812,9 @@ object {
 
 .home_taxonomy_box {
   width: 22%;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
-  font-family: 'merriweather';
+  font-family: "merriweather";
   font-weight: lighter;
   font-size: 1.2rem;
   border: 1px solid #e1e1e1;
@@ -790,26 +824,47 @@ object {
   width: 75px;
   height: 75px; }
 
-.home_taxonomy_link {
-  background: #a1a1a1;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px; }
+.home_box_button {
+  width: 55%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #248A83; }
 
-a.home_taxonomy_link {
-  color: #fff;
-  text-transform: uppercase; }
+.home_journal_posts_wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
-.home_titles {
-  font-family: 'novecento';
-  text-transform: uppercase;
-  font-weight: lighter;
-  text-align: center;
-  font-size: 2.8rem;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  width: 100%; }
+.journal_box {
+  border: 1px solid #e1e1e1;
+  width: 30%; }
+  .journal_box img {
+    max-height: 250px; }
+
+.journal_box_button {
+  width: 40%;
+  margin-left: 15px;
+  padding: 10px;
+  border: 1px solid #000;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .journal_box_button a {
+    font-family: "novecento";
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000; }
+
+.journal_box_button:hover {
+  background-color: #248A83;
+  border: none; }
+  .journal_box_button:hover a {
+    color: #fff; }
 
 .blog .site-content {
   display: -ms-flexbox;
