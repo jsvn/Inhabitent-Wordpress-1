@@ -16,7 +16,7 @@ get_header(); ?>
 			</div>
 
 			<div class="taxonomy_box_wrapper">
-					<h1 class="shop_stuff">Shop Stuff</h1>
+					<h1 class="home_titles">Shop Stuff</h1>
 					<?php
 					$terms = get_terms( array(
 					'taxonomy' => 'product_type',
@@ -26,17 +26,14 @@ get_header(); ?>
 					<?php	foreach ( $terms as $term ): ?>
 						<div class="home_taxonomy_box">
 							<img class="home_taxonomy_img" src="wp-content/themes/inhabitent/images/product-type-icons/<?php echo $term->name . '.svg'; ?>" />
-
-							<?php
-							echo	$term->name;
-							echo	$term->description;
-							?>
+						  <p><?php	echo	$term->description; ?></p>
+							<a class="home_taxonomy_link" href="#"><?php	echo	$term->name; ?></a>
 					</div>
 					<?php endforeach; wp_reset_postdata(); ?>
 			</div>
 
 
-
+			<h1 class="home_titles">Inhabitient Journal</h1>
 			<?php
 			 $args = array( 'post_type' => 'post', 'posts_per_page' => 3 );
 			 $journal_posts = get_posts( $args );

@@ -1,7 +1,58 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+// Merriweather
+
 @font-face {
-    font-family: Novecento;
-    src: url(../../fonts/Novecento/Novecentosanswide-Normal.ttf);
+    font-family: 'merriweather';
+    src: url('../fonts/Merriweather/merriweather-bold-webfont.woff2') format('woff2'),
+         url('../fonts/Merriweather/merriweather-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweather';
+    src: url('../fonts/Merriweather/merriweather-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/Merriweather/merriweather-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'merriweather';
+    src: url('../fonts/Merriweather/merriweather-light-webfont.woff2') format('woff2'),
+         url('../fonts/Merriweather/merriweather-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweather';
+    src: url('../fonts/Merriweather/merriweather-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/Merriweather/merriweather-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+// Novecento
+
+@font-face {
+    font-family: 'novecento';
+    src: url('../fonts/Novecento/novecentosanswide-demibold-webfont.eot') format('eot'),
+         url('../fonts/Novecento/novecentosanswide-demibold-webfont.svg') format('svg'),
+         url('../fonts/Novecento/novecentosanswide-demibold-webfont.woff') format('woff'),
+         url('../fonts/Novecento/novecentosanswide-demibold-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'novecento';
+    src: url('../fonts/Novecento/novecentosanswide-normal-webfont.eot') format('eot'),
+         url('../fonts/Novecento/novecentosanswide-normal-webfont.svg') format('svg'),
+         url('../fonts/Novecento/novecentosanswide-normal-webfont.woff') format('woff'),
+         url('../fonts/Novecento/novecentosanswide-normal-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }

@@ -223,8 +223,40 @@ th {
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
-  font-family: Novecento;
-  src: url(../../fonts/Novecento/Novecentosanswide-Normal.ttf); }
+  font-family: 'merriweather';
+  src: url("../fonts/Merriweather/merriweather-bold-webfont.woff2") format("woff2"), url("../fonts/Merriweather/merriweather-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../fonts/Merriweather/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../fonts/Merriweather/merriweather-bolditalic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../fonts/Merriweather/merriweather-light-webfont.woff2") format("woff2"), url("../fonts/Merriweather/merriweather-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../fonts/Merriweather/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../fonts/Merriweather/merriweather-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'novecento';
+  src: url("../fonts/Novecento/novecentosanswide-demibold-webfont.eot") format("eot"), url("../fonts/Novecento/novecentosanswide-demibold-webfont.svg") format("svg"), url("../fonts/Novecento/novecentosanswide-demibold-webfont.woff") format("woff"), url("../fonts/Novecento/novecentosanswide-demibold-webfont.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'novecento';
+  src: url("../fonts/Novecento/novecentosanswide-normal-webfont.eot") format("eot"), url("../fonts/Novecento/novecentosanswide-normal-webfont.svg") format("svg"), url("../fonts/Novecento/novecentosanswide-normal-webfont.woff") format("woff"), url("../fonts/Novecento/novecentosanswide-normal-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -712,7 +744,6 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .parent-home .content-area {
-  border: 2px solid blue;
   width: 100%; }
 
 .front_hero {
@@ -738,7 +769,6 @@ object {
 
 .taxonomy_box_wrapper {
   width: 100%;
-  border: 1px solid green;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -748,11 +778,38 @@ object {
 
 .home_taxonomy_box {
   width: 22%;
-  border: 1px dashed red; }
+  padding: 15px;
+  text-align: center;
+  font-family: 'merriweather';
+  font-weight: lighter;
+  font-size: 1.2rem;
+  border: 1px solid #e1e1e1;
+  border-top: 5px solid #e1e1e1; }
 
 .home_taxonomy_img {
-  width: 100px;
-  height: 100px; }
+  width: 75px;
+  height: 75px; }
+
+.home_taxonomy_link {
+  background: #a1a1a1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+a.home_taxonomy_link {
+  color: #fff;
+  text-transform: uppercase; }
+
+.home_titles {
+  font-family: 'novecento';
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 2.8rem;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%; }
 
 .blog .site-content {
   display: -ms-flexbox;
@@ -784,6 +841,7 @@ object {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: 'Novecento';
   font-size: 2.5rem; }
 
 .blog .widget-area {
