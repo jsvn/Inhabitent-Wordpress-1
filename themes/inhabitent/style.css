@@ -302,15 +302,6 @@ span.date_comments {
 .shop-title {
   margin-top: 40px !important; }
 
-.product_archive_info {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
-  border-top: 5px solid #e1e1e1; }
-
 .product_title_archives {
   padding: 0px;
   margin: 5px;

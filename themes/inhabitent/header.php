@@ -12,7 +12,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 	<?php wp_head(); ?>
 	</head>
@@ -30,10 +29,17 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
-								// 	get_search_form();
 
+
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
 								?>
+								<button class="search-submit">
+									<span class="icon-search" aria-hidden="true">
+										<i class="fa fa-search"></i>
+									</span>
+									<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
+								</button>
+								<?php get_search_form(); ?>
 				</nav>
 
 

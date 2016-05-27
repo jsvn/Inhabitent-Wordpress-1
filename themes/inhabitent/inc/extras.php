@@ -72,11 +72,10 @@ add_action('pre_get_posts', 'inhabitent_filter_product_query');
 // Load Font Awesome
 add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
 function enqueue_font_awesome() {
-
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
-
 }
 
+// jQuery for Search
 
 
 

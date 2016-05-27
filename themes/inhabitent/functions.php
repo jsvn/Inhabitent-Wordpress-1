@@ -93,18 +93,20 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 /**
  * Enqueue scripts and styles.
  */
-function red_starter_scripts() {
+function inhabitent_starter_scripts() {
 	wp_enqueue_style( 'inhabitent-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'jquery');
 
-	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'inhabitent-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+
+	wp_enqueue_script( 'inhabitent-search-bar', get_template_directory_uri() . '/build/js/search-bar.min.js', array( 'jquery' ), false, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
+add_action( 'wp_enqueue_scripts', 'inhabitent_starter_scripts' );
 
 /**
  * Custom template tags for this theme.
