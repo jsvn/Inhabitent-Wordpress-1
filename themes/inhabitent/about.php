@@ -15,10 +15,12 @@ get_header(); ?>
         <h2 class="about_hero_text">About</h1>
       </div>
 
-      <h1>Our Story</h1>
-      <?php echo CFS()->get( 'our_story' ); ?>
-      <h1>Out Team</h1>
-      <?php echo CFS()->get( 'our_team' ); ?>
+			<div class="about_content_wrapper">
+	      <h1>Our Story</h1>
+	      <p><?php echo CFS()->get( 'our_story' ); ?></p>
+	      <h1>Our Team</h1>
+	      <p><?php echo CFS()->get( 'our_team' ); ?></p>
+  		</div>
 
 
 		</main><!-- #main -->

@@ -57,10 +57,12 @@ get_header(); ?>
 					<?php endforeach; wp_reset_postdata(); ?>
 			</div>
 
+
+
 			<!-- Adventure Posts -->
+			<div class="taxonomy_box_wrapper">
 				<h1 class="home_titles">Latest Adventures</h1>
-
-
+			</div>
 
 
 		</main><!-- #main -->

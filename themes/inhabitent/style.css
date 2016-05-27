@@ -568,7 +568,6 @@ a {
   width: 100%;
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
-  top: 20;
   background: #fff; }
 
 .main-navigation {
@@ -778,6 +777,42 @@ object {
   display: block; }
 
 /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+  height: 400px;
+  background: url("../../images/dark-wood.png");
+  background-repeat: repeat-x;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: start;
+      align-items: flex-start; }
+  .site-footer .widget {
+    width: 20%;
+    margin-top: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .site-footer .widget h3 {
+      color: #d99054;
+      font-family: "novecento";
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      width: 100%;
+      padding-top: 0px;
+      margin-top: 0px; }
+
+.site-info {
+  width: 100%;
+  max-width: 1120px;
+  text-align: center; }
+
+/*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
@@ -913,4 +948,19 @@ object {
       align-items: center;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1.8rem; }
+  font-size: 2rem;
+  font-family: "novecento"; }
+
+.about_content_wrapper {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 100px; }
+  .about_content_wrapper h1 {
+    text-align: center;
+    font-family: "novecento";
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #000; }
+  .about_content_wrapper p {
+    font-family: "merriweather";
+    line-height: 2rem; }
