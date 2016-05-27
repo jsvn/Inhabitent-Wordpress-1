@@ -299,6 +299,38 @@ span.date_comments {
   margin-top: 10px;
   margin-left: 15px; }
 
+.shop-title {
+  margin-top: 40px !important; }
+
+.product_archive_info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  border-top: 5px solid #e1e1e1; }
+
+.product_title_archives {
+  padding: 0px;
+  margin: 5px;
+  color: #000; }
+  .product_title_archives a {
+    font-family: "merriweather";
+    font-size: 1.2rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: normal; }
+  .product_title_archives a:visited {
+    color: #000; }
+
+.price_title_archives {
+  font-family: "merriweather";
+  font-size: 1.2rem;
+  color: #000;
+  text-align: right;
+  font-weight: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -955,6 +987,35 @@ object {
 
 .page-title {
   margin: 0px; }
+
+.post_top_wrap {
+  border: 1px solid #e1e1e1; }
+  .post_top_wrap img {
+    width: 100%;
+    height: 230px;
+    margin-bottom: -7px; }
+
+.product_archive_info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  border-top: 5px solid #e1e1e1;
+  padding: 5px; }
+
+.product_wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto; }
+
+.post-type-archive-product article {
+  width: 23%; }
 
 .about_hero {
   width: 100vw;

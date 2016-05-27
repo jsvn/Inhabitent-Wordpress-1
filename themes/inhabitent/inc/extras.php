@@ -64,6 +64,10 @@ function inhabitent_filter_product_query( $query ){
 add_action('pre_get_posts', 'inhabitent_filter_product_query');
 
 
+// Changing archive title
+
+
+
 
 // Load Font Awesome
 add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );

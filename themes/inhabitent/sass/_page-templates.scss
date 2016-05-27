@@ -155,6 +155,42 @@
   margin: 0px;
 }
 
+.post_top_wrap {
+
+  border: 1px solid #e1e1e1;
+
+  img {
+    width: 100%;
+    height: 230px;
+    margin-bottom: -7px;
+  }
+}
+
+.product_archive_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 5px solid #e1e1e1;
+  padding: 5px;
+}
+
+
+.product_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.post-type-archive-product {
+
+  article {
+    width: 23%;;
+  }
+
+}
+
+
+
 
 
 

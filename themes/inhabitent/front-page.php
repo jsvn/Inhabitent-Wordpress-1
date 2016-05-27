@@ -39,12 +39,15 @@ get_header(); ?>
 
 			<!-- Journal Posts -->
 			<div class="home_journal_posts_wrapper">
+				
 				<h1 class="home_titles">Inhabitient Journal</h1>
 					<?php
 				 	$args = array( 'post_type' => 'post', 'posts_per_page' => 3 );
 				 	$journal_posts = get_posts( $args );
 					?>
 					<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+
+
 						<div class="journal_box">
 							<?php	the_post_thumbnail(); ?>
 							<span class="date_comments"><?php	the_date(); ?> / <?php comments_number( '0 comments', '1 comment', '% comments' ); ?></span>
@@ -54,6 +57,9 @@ get_header(); ?>
 									<a href=<?php	the_permalink(); ?>>Read Entry</a>
 								</div>
 					 </div>
+
+
+
 					<?php endforeach; wp_reset_postdata(); ?>
 			</div>
 
