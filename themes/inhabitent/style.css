@@ -258,6 +258,9 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+.day_of_week {
+  font-weight: bold; }
+
 .home_titles {
   font-family: "novecento";
   text-transform: uppercase;
@@ -790,10 +793,12 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-align: start;
-      align-items: flex-start; }
+      align-items: flex-start;
+  padding-left: 30px;
+  padding-right: 30px; }
   .site-footer .widget {
-    width: 20%;
-    margin-top: 40px;
+    width: 24%;
+    margin-top: 80px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -806,11 +811,22 @@ object {
       width: 100%;
       padding-top: 0px;
       margin-top: 0px; }
+    .site-footer .widget p {
+      color: #fff;
+      font-family: "merriweather";
+      font-size: 1.1rem;
+      line-height: 0.5rem; }
+    .site-footer .widget .fa {
+      margin-right: 10px; }
 
 .site-info {
   width: 100%;
   max-width: 1120px;
-  text-align: center; }
+  text-align: center;
+  font-family: "novecento";
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #fff; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -936,6 +952,9 @@ object {
 
 .blog .widget-area {
   width: 28%; }
+
+.page-title {
+  margin: 0px; }
 
 .about_hero {
   width: 100vw;

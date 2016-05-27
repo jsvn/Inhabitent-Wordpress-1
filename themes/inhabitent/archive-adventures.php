@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying product posts.
+ * The template for displaying archive pages.
  *
  * @package RED_Starter_Theme
  */
@@ -12,13 +12,13 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<!-- <header class="page-header">
-
-			</header><!-- .page-header --> -->
-			<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="taxonomy-description">', '</div>' );
-			?>
+			<header class="page-header">
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				?>
+			</header><!-- .page-header -->
+			<h1>ADVENTURES!!</h1>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -39,4 +39,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

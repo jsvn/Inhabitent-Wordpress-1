@@ -18,7 +18,8 @@
 				?>
 
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'TOM - YEAH' ); ?></a>
+					<p>Copyright &copy; 2016 Inhabitent</p>
+
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
