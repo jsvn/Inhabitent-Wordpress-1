@@ -65,17 +65,12 @@ add_action('pre_get_posts', 'inhabitent_filter_product_query');
 
 
 // Changing archive title
-add_filter( 'get_the_archive_title', function ( $title ) {
 
-    if( is_category() ) {
-
-        $title = 'Shop Stuff';
-
-    }
-
-    return $title;
-
-});
+function title_function(){
+	$title = 'SHOP STUFF';
+	return $title;
+}
+add_filter( 'get_the_archive_title', 'title_function');
 
 
 // Load Font Awesome
