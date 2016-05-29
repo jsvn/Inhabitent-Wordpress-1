@@ -31,6 +31,7 @@ a {
 	display: block;
 	float: left;
 	width: 100%;
+	z-index: 5;
 
 	ul {
 		display: none;
@@ -141,6 +142,7 @@ a {
 	border-bottom: 1px solid #e1e1e1;
 	position: fixed;
 	background: #fff;
+	z-index: 5;
 }
 
 .main-navigation {

@@ -524,7 +524,8 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  z-index: 5; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -595,7 +596,8 @@ a {
   width: 100%;
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
-  background: #fff; }
+  background: #fff;
+  z-index: 5; }
 
 .main-navigation {
   width: 30%;
@@ -949,7 +951,7 @@ object {
 
 .blog .content-area {
   width: 70%;
-  border: 2px solid green; }
+  margin-top: 50px; }
 
 .blog .entry-header img {
   width: 100%; }
@@ -1066,3 +1068,51 @@ object {
   .about_content_wrapper p {
     font-family: "merriweather";
     line-height: 2rem; }
+
+.parent-find-us .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.parent-find-us .content-area {
+  width: 70%;
+  margin-top: 150px;
+  padding-left: 5%; }
+
+.parent-find-us .entry-header img {
+  width: 100%; }
+
+.parent-find-us .post_top_wrap {
+  position: relative;
+  border: 1px solid red;
+  padding: 5%; }
+
+.parent-find-us .entry-title {
+  position: absolute;
+  top: 100px;
+  color: #000;
+  width: 65%;
+  color: #808080;
+  text-transform: uppercase;
+  font-family: "novecento"; }
+
+.parent-find-us .entry-title a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Novecento';
+  font-size: 2.5rem; }
+
+.parent-find-us .widget-area {
+  width: 28%;
+  border-left: 1px solid #e1e1e1;
+  padding-left: 15px;
+  padding-top: 40px;
+  margin-top: 55px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }

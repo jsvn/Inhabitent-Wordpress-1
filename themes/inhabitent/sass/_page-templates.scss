@@ -102,7 +102,6 @@
 }
 
 // Journal Page
-
 .blog {
 
       .site-content {
@@ -112,7 +111,7 @@
 
      .content-area {
       width: 70%;
-      border: 2px solid green;
+      margin-top: 50px;
     }
 
     .entry-header img {
@@ -257,4 +256,62 @@
       font-family: $font_meri;
       line-height: 2rem;
     }
+}
+
+// Find US
+
+.parent-find-us {
+
+      .site-content {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+     .content-area {
+      width: 70%;
+      margin-top: 150px;
+      padding-left: 5%;
+    }
+
+    .entry-header img {
+      width: 100%;
+    }
+
+    .post_top_wrap {
+      position: relative;
+      border: 1px solid red;
+      padding: 5%;
+    }
+
+    .entry-title {
+      position: absolute;
+      top: 100px;
+      color: #000;
+      width: 65%;
+      color: #808080;
+      text-transform: uppercase;
+      font-family: $font_nov;
+    }
+
+    .entry-title a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: 'Novecento';
+      font-size: 2.5rem;
+
+    }
+
+    .widget-area {
+      width: 28%;
+      border-left: 1px solid #e1e1e1;
+      padding-left: 15px;
+      padding-top: 40px;
+      margin-top: 55px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+
 }
