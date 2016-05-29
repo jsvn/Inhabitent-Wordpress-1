@@ -948,6 +948,85 @@ object {
   .journal_box_button:hover a {
     color: #fff; }
 
+.adventure_home_wrapper {
+  width: 90%;
+  height: 500px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 50px; }
+
+.adventure_home_boxes {
+  position: absolute;
+  top: 10px;
+  z-index: 3; }
+
+.adventure_box_106 {
+  border: 1px solid #e1e1e1;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  font-family: "merriweather";
+  color: #fff;
+  font-size: 1.8rem; }
+  .adventure_box_106 img {
+    height: 100%; }
+
+.adventure_box_107 {
+  position: relative;
+  width: 47%;
+  height: 60%;
+  font-family: "merriweather";
+  color: #fff;
+  font-size: 1.4rem; }
+  .adventure_box_107 img {
+    height: 100%; }
+
+.adventure_box_108 {
+  position: absolute;
+  right: 260px;
+  bottom: 0px;
+  width: 23%;
+  font-family: "merriweather";
+  color: #fff;
+  font-size: 1rem; }
+  .adventure_box_108 img {
+    height: 100%; }
+
+.adventure_box_109 {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 23%;
+  font-family: "merriweather";
+  color: #fff;
+  font-size: 1rem; }
+  .adventure_box_109 img {
+    height: 100%; }
+
+.adventure_box_button {
+  width: 50%;
+  margin-left: 15px;
+  padding: 10px;
+  border: 1px solid #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: absolute;
+  bottom: 20px; }
+  .adventure_box_button a {
+    font-family: "novecento";
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff; }
+
 .blog .site-content {
   display: -ms-flexbox;
   display: flex;

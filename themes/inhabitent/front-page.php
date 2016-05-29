@@ -61,20 +61,19 @@ get_header(); ?>
 
 
 			<!-- Adventure Posts -->
-			<div class="taxonomy_box_wrapper">
-				<h1 class="home_titles">Latest Adventures</h1>
-			</div>
+			<h1 class="home_titles">Latest Adventures</h1>
+			<div class="adventure_home_wrapper">
+
+
 				<?php
-				$args = array( 'post_type' => 'adventure_posts', 'posts_per_page' => 3 );
+				$args = array( 'post_type' => 'adventure_posts', 'order' => 'ASC');
 				$journal_posts = get_posts( $args );
 				?>
 				<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
-					<div class="journal_box">
+					<div class="adventure_box_<?php the_id() ?>">
 						<?php	the_post_thumbnail(); ?>
-						<span class="date_comments"><?php	the_date(); ?> / <?php comments_number( '0 comments', '1 comment', '% comments' ); ?></span>
-						<h3 class="journal_home_boxes">
-							<?php the_title(); ?></h3>
-							<div class="journal_box_button">
+						<h3 class="adventure_home_boxes">	<?php the_title(); ?></h3>
+							<div class="adventure_box_button">
 								<a href=<?php	the_permalink(); ?>>Read Entry</a>
 							</div>
 				 </div>
