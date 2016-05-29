@@ -182,7 +182,7 @@
 }
 
 .adventure_box_button {
-  width: 50%;
+  width: 150px;
   margin-left: 15px;
   padding: 10px;
   border: 1px solid #fff;
@@ -220,7 +220,6 @@
 
     .post_top_wrap {
       position: relative;
-      border: 1px solid red;
       padding: 5%;
     }
 
@@ -254,16 +253,7 @@
   margin: 0px;
 }
 
-.post_top_wrap {
 
-  border: 1px solid #e1e1e1;
-
-  img {
-    width: 100%;
-    height: 230px;
-    margin-bottom: -7px;
-  }
-}
 
 .product_archive_title {
     margin: 0 auto;
@@ -311,6 +301,17 @@
 
   article {
     width: 23%;;
+  }
+
+  .post_top_wrap {
+
+    border: 1px solid #e1e1e1;
+
+    img {
+      width: 100%;
+      height: 230px;
+      margin-bottom: -7px;
+    }
   }
 
 }
