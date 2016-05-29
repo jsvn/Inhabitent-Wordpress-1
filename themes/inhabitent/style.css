@@ -323,6 +323,11 @@ span.date_comments {
   text-align: right;
   font-weight: normal; }
 
+.find-us-h2 {
+  font-family: "novecento";
+  text-transform: uppercase;
+  font-size: 2rem; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -1079,13 +1084,14 @@ object {
   width: 70%;
   margin-top: 150px;
   padding-left: 5%; }
+  .parent-find-us .content-area p {
+    font-family: "merriweather"; }
 
 .parent-find-us .entry-header img {
   width: 100%; }
 
 .parent-find-us .post_top_wrap {
   position: relative;
-  border: 1px solid red;
   padding: 5%; }
 
 .parent-find-us .entry-title {
@@ -1093,7 +1099,7 @@ object {
   top: 100px;
   color: #000;
   width: 65%;
-  color: #808080;
+  color: #000;
   text-transform: uppercase;
   font-family: "novecento"; }
 
@@ -1114,5 +1120,17 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  .parent-find-us .widget-area aside {
+    width: 90%;
+    height: 300px; }
+    .parent-find-us .widget-area aside h2 {
+      font-family: "novecento";
+      text-transform: uppercase; }
+    .parent-find-us .widget-area aside p {
+      font-family: "merriweather"; }
+    .parent-find-us .widget-area aside .fa {
+      margin-right: 10px; }

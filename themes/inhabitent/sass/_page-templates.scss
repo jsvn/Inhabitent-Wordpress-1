@@ -271,6 +271,9 @@
       width: 70%;
       margin-top: 150px;
       padding-left: 5%;
+        p {
+          font-family: $font_meri;
+        }
     }
 
     .entry-header img {
@@ -279,7 +282,6 @@
 
     .post_top_wrap {
       position: relative;
-      border: 1px solid red;
       padding: 5%;
     }
 
@@ -288,7 +290,7 @@
       top: 100px;
       color: #000;
       width: 65%;
-      color: #808080;
+      color: #000;
       text-transform: uppercase;
       font-family: $font_nov;
     }
@@ -310,7 +312,28 @@
       margin-top: 55px;
       display: flex;
       justify-content: center;
+      align-items: flex-start;
       flex-wrap: wrap;
+
+        aside {
+          width: 90%;
+          height: 300px;
+
+          h2 {
+            font-family: $font_nov;
+            text-transform: uppercase;
+          }
+
+          p {
+            font-family: $font_meri;
+          }
+
+          .fa{
+            margin-right: 10px;
+          }
+
+        }
+
     }
 
 
