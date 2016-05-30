@@ -1348,3 +1348,81 @@ object {
 
 fieldset {
   border: none; }
+
+.error404 .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.error404 .content-area {
+  width: 65%;
+  margin-top: 150px;
+  padding-left: 5%; }
+  .error404 .content-area p {
+    font-family: "merriweather"; }
+
+.error404 .entry-header img {
+  width: 100%; }
+
+.error404 .post_top_wrap {
+  position: relative;
+  padding: 5%; }
+
+.error404 .entry-title {
+  color: #000;
+  width: 65%;
+  color: #000;
+  text-transform: uppercase;
+  font-family: "novecento"; }
+
+.error404 .entry-title a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Novecento';
+  font-size: 2.5rem; }
+
+.error404 .widget-area {
+  width: 28%;
+  border-left: 1px solid #e1e1e1;
+  padding-left: 15px;
+  padding-top: 40px;
+  margin-top: 55px; }
+  .error404 .widget-area aside {
+    width: 90%; }
+    .error404 .widget-area aside h2 {
+      font-family: "novecento";
+      text-transform: uppercase; }
+    .error404 .widget-area aside p {
+      font-family: "merriweather"; }
+    .error404 .widget-area aside .fa {
+      margin-right: 10px; }
+
+.wpcf7-form input {
+  background: #f1f1f1;
+  border-radius: 0%; }
+
+.wpcf7-form textarea {
+  background: #f1f1f1;
+  border-radius: 0%; }
+
+.wpcf7-form .wpcf7-submit {
+  background: #248A83;
+  color: #fff;
+  box-shadow: none;
+  border: none;
+  text-shadow: none;
+  height: 40px;
+  width: 130px;
+  font-size: 1rem; }
+
+.wpcf7-form .wpcf7-submit:hover {
+  box-shadow: none;
+  color: #000; }
+
+.form_p {
+  font-family: "novecento"; }
+
+.wpcf7-textarea {
+  width: 80%; }

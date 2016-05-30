@@ -536,79 +536,182 @@
 }
 
 .search {
-  .site-content {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
- .content-area {
-  width: 70%;
-  margin-top: 150px;
-  padding-left: 5%;
-    p {
-      font-family: $font_meri;
+      .site-content {
+      display: flex;
+      flex-wrap: nowrap;
     }
-}
 
-.entry-header img {
-  width: 100%;
-}
+     .content-area {
+      width: 70%;
+      margin-top: 150px;
+      padding-left: 5%;
+        p {
+          font-family: $font_meri;
+        }
+    }
 
-.post_top_wrap {
-  position: relative;
-  padding: 5%;
-}
+    .entry-header img {
+      width: 100%;
+    }
 
-.entry-title {
-  color: #000;
-  width: 65%;
-  color: #000;
-  text-transform: uppercase;
-  font-family: $font_nov;
-}
+    .post_top_wrap {
+      position: relative;
+      padding: 5%;
+    }
 
-.entry-title a {
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Novecento';
-  font-size: 2.5rem;
+    .entry-title {
+      color: #000;
+      width: 65%;
+      color: #000;
+      text-transform: uppercase;
+      font-family: $font_nov;
+    }
 
-}
-
-.widget-area {
-  width: 28%;
-  border-left: 1px solid #e1e1e1;
-  padding-left: 15px;
-  padding-top: 40px;
-  margin-top: 55px;
-
-    aside {
-      width: 90%;
-
-      h2 {
-        font-family: $font_nov;
-        text-transform: uppercase;
-      }
-
-      p {
-        font-family: $font_meri;
-      }
-
-      .fa{
-        margin-right: 10px;
-      }
+    .entry-title a {
+      color: #000;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: 'Novecento';
+      font-size: 2.5rem;
 
     }
 
+    .widget-area {
+      width: 28%;
+      border-left: 1px solid #e1e1e1;
+      padding-left: 15px;
+      padding-top: 40px;
+      margin-top: 55px;
+
+        aside {
+          width: 90%;
+
+          h2 {
+            font-family: $font_nov;
+            text-transform: uppercase;
+          }
+
+          p {
+            font-family: $font_meri;
+          }
+
+          .fa{
+            margin-right: 10px;
+          }
+
+        }
+
+    }
 }
-
-
-
-}
-
-
 
 fieldset {
   border: none;
+}
+
+//
+.error404{
+
+      .site-content {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+     .content-area {
+      width: 65%;
+      margin-top: 150px;
+      padding-left: 5%;
+        p {
+          font-family: $font_meri;
+        }
+    }
+
+    .entry-header img {
+      width: 100%;
+    }
+
+    .post_top_wrap {
+      position: relative;
+      padding: 5%;
+    }
+
+    .entry-title {
+      color: #000;
+      width: 65%;
+      color: #000;
+      text-transform: uppercase;
+      font-family: $font_nov;
+    }
+
+    .entry-title a {
+      color: #000;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: 'Novecento';
+      font-size: 2.5rem;
+
+    }
+
+    .widget-area {
+      width: 28%;
+      border-left: 1px solid #e1e1e1;
+      padding-left: 15px;
+      padding-top: 40px;
+      margin-top: 55px;
+
+        aside {
+          width: 90%;
+
+          h2 {
+            font-family: $font_nov;
+            text-transform: uppercase;
+          }
+
+          p {
+            font-family: $font_meri;
+          }
+
+          .fa{
+            margin-right: 10px;
+          }
+        }
+      }
+}
+
+// Contact form
+.wpcf7-form{
+
+  input{
+    background: #f1f1f1;
+    border-radius: 0%;
+  }
+
+  textarea {
+    background: #f1f1f1;
+    border-radius: 0%;
+  }
+
+  .wpcf7-submit {
+    background: #248A83;
+    color: #fff;
+    box-shadow: none;
+    border: none;
+    text-shadow: none;
+    height: 40px;
+    width: 130px;
+    font-size: 1rem;
+  }
+
+  .wpcf7-submit:hover{
+    box-shadow: none;
+    color: #000;
+  }
+
+}
+
+.form_p {
+  font-family: $font_nov;
+}
+
+.wpcf7-textarea {
+  width: 80%;
 }
