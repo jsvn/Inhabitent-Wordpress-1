@@ -1349,6 +1349,56 @@ object {
 fieldset {
   border: none; }
 
+.single .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.single .content-area {
+  width: 70%;
+  margin-top: 100px;
+  padding-left: 5%; }
+  .single .content-area p {
+    font-family: "merriweather"; }
+
+.single .entry-header img {
+  width: 90%; }
+
+.single .post_top_wrap {
+  position: relative;
+  padding: 5%; }
+
+.single .entry-title {
+  color: #000;
+  width: 65%;
+  color: #000;
+  text-transform: uppercase;
+  font-family: "novecento"; }
+
+.single .entry-title a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Novecento';
+  font-size: 2.5rem; }
+
+.single .widget-area {
+  width: 28%;
+  border-left: 1px solid #e1e1e1;
+  padding-left: 15px;
+  padding-top: 40px;
+  margin-top: 55px; }
+  .single .widget-area aside {
+    width: 90%; }
+    .single .widget-area aside h2 {
+      font-family: "novecento";
+      text-transform: uppercase; }
+    .single .widget-area aside p {
+      font-family: "merriweather"; }
+    .single .widget-area aside .fa {
+      margin-right: 10px; }
+
 .error404 .site-content {
   display: -ms-flexbox;
   display: flex;
