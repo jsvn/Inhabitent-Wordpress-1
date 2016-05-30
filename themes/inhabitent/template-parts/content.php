@@ -33,4 +33,7 @@
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
+	<div class="journal_read_more">
+		<a href=<?php	the_permalink(); ?>>Read More</a>
+	</div>
 </article><!-- #post-## -->
