@@ -630,7 +630,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  width: 320px; }
 
 .main-navigation a {
   color: #a1a1a1;
@@ -1078,7 +1079,10 @@ object {
 
 .blog .widget-area {
   width: 28%;
-  margin-top: 70px; }
+  margin-top: 56px;
+  padding-top: 14px;
+  padding-left: 30px;
+  border-left: 1px solid #e1e1e1; }
   .blog .widget-area h2 {
     font-family: "novecento";
     text-transform: uppercase; }
@@ -1168,6 +1172,35 @@ object {
   width: 10%;
   text-align: center; }
 
+.single_product_wrapper {
+  border: 1px solid green;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 95vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .single_product_wrapper .entry-header {
+    width: 45%; }
+    .single_product_wrapper .entry-header img {
+      margin-top: 80px; }
+  .single_product_wrapper .entry-content {
+    width: 45%;
+    margin-top: 50px; }
+    .single_product_wrapper .entry-content .entry-title {
+      font-family: "novecento";
+      font-size: 2.4rem;
+      color: #d99054;
+      text-transform: uppercase; }
+    .single_product_wrapper .entry-content .single_product_price {
+      font-family: "novecento";
+      color: #000;
+      font-size: 1.7rem; }
+    .single_product_wrapper .entry-content .single_product_content {
+      font-family: "merriweather"; }
+
 .about_hero {
   width: 100vw;
   height: 100vh;
@@ -1237,18 +1270,9 @@ object {
   border-left: 1px solid #e1e1e1;
   padding-left: 15px;
   padding-top: 40px;
-  margin-top: 55px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: start;
-      align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  margin-top: 55px; }
   .parent-find-us .widget-area aside {
-    width: 90%;
-    height: 300px; }
+    width: 90%; }
     .parent-find-us .widget-area aside h2 {
       font-family: "novecento";
       text-transform: uppercase; }
@@ -1256,3 +1280,71 @@ object {
       font-family: "merriweather"; }
     .parent-find-us .widget-area aside .fa {
       margin-right: 10px; }
+
+.search-submit {
+  border: 0px;
+  background: none;
+  color: #a1a1a1;
+  box-shadow: none;
+  outline: none;
+  margin-top: -4px; }
+
+.search-submit:hover {
+  border: 0px;
+  background: none;
+  color: #000;
+  box-shadow: none;
+  outline: none; }
+
+.search .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.search .content-area {
+  width: 70%;
+  margin-top: 150px;
+  padding-left: 5%; }
+  .search .content-area p {
+    font-family: "merriweather"; }
+
+.search .entry-header img {
+  width: 100%; }
+
+.search .post_top_wrap {
+  position: relative;
+  padding: 5%; }
+
+.search .entry-title {
+  color: #000;
+  width: 65%;
+  color: #000;
+  text-transform: uppercase;
+  font-family: "novecento"; }
+
+.search .entry-title a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Novecento';
+  font-size: 2.5rem; }
+
+.search .widget-area {
+  width: 28%;
+  border-left: 1px solid #e1e1e1;
+  padding-left: 15px;
+  padding-top: 40px;
+  margin-top: 55px; }
+  .search .widget-area aside {
+    width: 90%; }
+    .search .widget-area aside h2 {
+      font-family: "novecento";
+      text-transform: uppercase; }
+    .search .widget-area aside p {
+      font-family: "merriweather"; }
+    .search .widget-area aside .fa {
+      margin-right: 10px; }
+
+fieldset {
+  border: none; }
