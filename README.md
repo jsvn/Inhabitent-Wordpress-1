@@ -6,7 +6,7 @@
 
 Using Wordpress as a CMS, custom pages, post types and taxonomies were created. A starter theme based on _underscores was used and further theme development and styling was required to adequetly reflect the design comps.
 
-This project includes:
+This project uses:
 
 1. HTML5 / CSS3,
 2. SASS / SCSS,
