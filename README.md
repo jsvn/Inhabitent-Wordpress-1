@@ -2,6 +2,8 @@
 #Inhabitent
 ##Camping Suppy Company
 
+![Inhabitent Home Screen](http://imgur.com/b2g3M3Y "Inhabitent Home Screen")
+
 Using Wordpress as a CMS, custom pages, post types and taxonomies were created. A starter theme based on _underscores was provided and further theme development and styling was required to adequetly reflect the design comps.
 
 This project includes:
