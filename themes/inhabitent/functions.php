@@ -119,22 +119,3 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 //
 require get_template_directory() . '/inc/login.php';
-
-
-
-
-function body_class_section($classes) {
-    global $wpdb, $post;
-    if (is_page()) {
-        if ($post->post_parent) {
-            $parent  = end(get_post_ancestors($current_page_id));
-        } else {
-            $parent = $post->ID;
-        }
-        $post_data = get_post($parent, ARRAY_A);
-        $classes[] = 'parent-' . $post_data['post_name'];
-    }
-    return $classes;
-}
-
-add_filter('body_class','body_class_section');

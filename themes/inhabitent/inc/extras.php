@@ -30,7 +30,7 @@ add_action( 'admin_init', 'inhabitent_remove_submenus', 102 );
 
 
 //setting inline css.
-function about_hero_style_method() {
+function inhabitent_about_hero_style_method() {
 
 				// if ( !is_page_template( 'about.php' ) ) {
 				// 	return ;
@@ -47,7 +47,7 @@ function about_hero_style_method() {
 
 
 }
-add_action( 'wp_enqueue_scripts', 'about_hero_style_method' );
+add_action( 'wp_enqueue_scripts', 'inhabitent_about_hero_style_method' );
 
 
 function inhabitent_filter_product_query( $query ){
@@ -66,11 +66,11 @@ add_action('pre_get_posts', 'inhabitent_filter_product_query');
 
 // Changing archive title
 
-function title_function(){
+function inhabitent_title_function(){
 	$title = 'SHOP STUFF';
 	return $title;
 }
-add_filter( 'get_the_archive_title', 'title_function');
+add_filter( 'get_the_archive_title', 'inhabitent_title_function');
 
 
 // Load Font Awesome
@@ -79,7 +79,22 @@ function enqueue_font_awesome() {
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
 }
 
-// jQuery for Search
+function inhabitent_body_class_section($classes) {
+    global $wpdb, $post;
+    if (is_page()) {
+        if ($post->post_parent) {
+            $parent  = end(get_post_ancestors($current_page_id));
+        } else {
+            $parent = $post->ID;
+        }
+        $post_data = get_post($parent, ARRAY_A);
+        $classes[] = 'parent-' . $post_data['post_name'];
+    }
+    return $classes;
+}
+
+add_filter('body_class','inhabitent_body_class_section');
+
 
 
 
