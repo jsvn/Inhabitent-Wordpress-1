@@ -407,9 +407,6 @@
 
 }
 
-
-
-
 // About Page
 
 .about_hero {
@@ -683,10 +680,12 @@ fieldset {
 
 
 }
+
+
 //
 .error404{
 
-      .site-content {
+    .site-content {
       display: flex;
       flex-wrap: nowrap;
     }
@@ -698,7 +697,14 @@ fieldset {
         p {
           font-family: $font_meri;
         }
+        .page-title {
+          font-family: $font_nov;
+          text-transform: uppercase;
+        }
+
     }
+
+
 
     .entry-header img {
       width: 100%;
@@ -789,4 +795,110 @@ fieldset {
 
 .wpcf7-textarea {
   width: 80%;
+}
+
+// Page Fonts
+
+.day_of_week {
+  font-weight: bold;
+}
+
+.home_titles {
+  font-family: $font_nov;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 2.8rem;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+
+a.home_taxonomy_link{
+  font-family: $font_nov;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+a.home_taxonomy_link:visited {
+color:#fff;
+}
+
+p.para_tax_box {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+}
+
+h3.journal_home_boxes {
+  color: #248A83;
+  font-family: $font_nov;
+  text-transform: uppercase;
+  margin-left: 15px;
+  font-size: 1.8rem;
+}
+
+span.date_comments {
+  display: block;
+  font-family: $font_meri;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+
+// Journal
+
+.journal_comments {
+  color: #fff;
+  font-family: $font_meri;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0px;
+  right: 42px;
+  background-color: #248A83;
+  padding: 5px;
+}
+
+// Shop
+
+.shop-title {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.product_title_archives {
+  padding: 0px;
+  margin: 5px;
+  color: #000;
+   a {
+     font-family: $font_meri;
+     font-size: 1.2rem;
+     color: #000;
+     text-decoration: none;
+     font-weight: normal;
+   }
+   a:visited {
+     color: #000;
+   }
+}
+
+.price_title_archives {
+  font-family: $font_meri;
+  font-size: 1.2rem;
+  color: #000;
+  text-align: right;
+  font-weight: normal;
+}
+
+// find us
+
+.find-us-h2 {
+  font-family: $font_nov;
+  text-transform: uppercase;
+  font-size: 2rem;
 }
